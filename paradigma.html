@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>FUNCTIONAL PROGRAM</title>
+</head>
+<body>
+
+<h2>Persamaan Ramda, Underscore, dan Lodash</h2>
+<p>
+    <br>1.Mempermudah pekerjaan yang sulit menjadi simple dan lebih elegan.
+    <br>2.Membuat library yang lebih spesifik untuk programming style.
+    <br>3.Berfokus pada fungsional program.
+</p>
+<h2>RAMDA</h2>
+<p>
+    import identity from  'ramda/src/identity'
+    identity()
+</p>
+<h2>Underscore</h2>
+<p>
+    <br>_.each([1, 2, 3], alert);
+    <br>// => alerts each number in turn....
+    <br>_.each({one: 1, two: 2, three: 3}, alert);
+    <br>// => alert each number value in turn....
+</p>
+<h2>Lodash</h2>
+<p>
+    <!-- // <script src="lodash.js"> -->
+    <br>// $ npm i -g npm
+    <br>// $ npm i --save lodash
+    <br>// Load the full build.
+    <br>var _ = require('lodash');
+    <br>// Load the core build.
+    <br>var _ = require('lodash/core');
+    <br>// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+    <br>var fp = require('lodash/fp');
+ 
+    <br>// Load method categories.
+    <br>var array = require('lodash/array');
+    <br>var object = require('lodash/fp/object');
+ 
+    <br>// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+    <br>var at = require('lodash/at');
+    <br>var curryN = require('lodash/fp/curryN');
+    <br>_.defaults({'a': 2}, {'a': 5, 'b' : 2});
+    <br>_.partition([1, 2, 3, 4, 5, 6, 7, 8, 9 ,10], n => n % 1);
+</p>
+
+</body>
+</html>
