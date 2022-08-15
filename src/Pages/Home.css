@@ -1,0 +1,95 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-style: italic;
+    font-size: 5mm;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(../assets/bg1.jpg);
+    width: 500px;
+    height: 600px;
+    border-top: 15px solid yellow;
+    border-left: none;
+    border-right: none;
+    border-bottom: 15px solid yellow;
+    padding-left: 10px;
+    margin-left: 400px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    flex: 4;
+  }
+
+.grid-container > div {
+    padding: 10px ;
+    font-size: 30px;
+}
+
+.a{
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    width: 70%;
+    background-color: mediumturquoise;
+}
+
+/* .button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+  } */
+  .div {
+    font-size: large;
+    cursor: pointer;
+    color : #FFFFFF;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    position:sticky;
+    animation: myfirst 4s linear 1s infinite alternate;
+    margin: 20px; 
+  }
+  
+  @keyframes myfirst {
+    0%   {background-color:red; left:0px; right:0px;}
+    25%  {background-color:yellow; left:200px; right:0px;}
+    50%  {background-color:blue; left:200px; right:200px;}
+    75%  {background-color:green; left:0px; right:200px;}
+    100% {background-color:red; left:0px; right:0px;}
+  }
+  
+.div span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.div span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.div:hover span {
+    padding-right: 25px;
+}
+  
+.div:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.X {
+    font-weight: bolder;
+    float: right;
+}
