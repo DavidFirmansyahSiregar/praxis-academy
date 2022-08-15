@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+<head>
+<title>LAYOUT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=400px, initial-scale=1">
+<link rel="stylesheet" href="styless.css">
+
+<style>
+    {
+        box-sizing:border-box
+    }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    background-color: #777;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:white;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    height: 300px; 
+    background: #ccc;
+    padding: 20px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; 
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px){
+    nav, article{
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+    <div>
+
+<h2>TEST RUN CSS LAYOUT</h2>
+<p>Percobaan</p>
+
+<header>
+    <h1>Makanan-makanan Khas Indonesia</h1>
+    <img src="rendang.jpg" align="left">
+    <img src="pecel.jpg" align="middle">
+    <img src="gudeg.jpg" align="right">
+</header>
+
+<section>
+    <nav>
+        
+
+        <ul>
+            <h4><li><a href="#">Rendang</a></li></h4>
+            <h4><li><a href="#">Pecel</a></li></h4>
+            <h4><li><a href="#">Gudeg</a></li></h4>
+            
+        </ul>
+    </nav>
+    <article>
+        <h1>Rendang</h1>
+        <p>Rendang adalah makanan khas Indonesia yang terkenal hingga ke seluruh penjuru dunia. Cita rasanya yang khas membuat banyak orang menyukai rendang.</p>
+    </article>
+</section>
+
+<footer>
+    <p><b>Tamat</p></b>
+</footer>
+</div>
+
+</body>
+</html>
